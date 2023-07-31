@@ -44,7 +44,7 @@
             $tfa->ensureCorrectTime();
             echo 'Your hosts time seems to be correct / within margin';
         } catch (RobThree\Auth\TwoFactorAuthException $ex) {
-            echo '<b>Warning:</b> Your hosts time seems to be off: ' . $ex->getMessage();
+            echo '<b>Warning:</b> Your hosts time seems to be off:  ' . $ex->getMessage();
         }
     ?>
 </body>
